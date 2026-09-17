@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Aamir Hussain Agro & Livestock Farm</title>
+  <meta name="description" content="Aamir Hussain Agro & Livestock Farm - Agriculture, livestock farming, cattle, goats, sheep and agricultural services in Sindh, Pakistan.">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f6f8f4;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #14532d;
+      color: white;
+      padding: 18px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 21px;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 15px;
+    }
+
+    nav a:hover {
+      color: #bbf7d0;
+    }
+
+    .hero {
+      min-height: 80vh;
+      background:
+        linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+        url("https://images.unsplash.com/photo-1500595046743-cd271d694d30?auto=format&fit=crop&w=1600&q=80")
+        center/cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      padding: 30px;
+    }
+
+    .hero-content {
+      max-width: 850px;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      margin-bottom: 25px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 13px 24px;
+      margin: 5px;
+      border-radius: 7px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .whatsapp {
+      background: #25D366;
+      color: white;
+    }
+
+    .call {
+      background: white;
+      color: #14532d;
+    }
+
+    section {
+      padding: 65px 7%;
+    }
+
+    .section-title {
+      text-align: center;
+      color: #14532d;
+      font-size: 32px;
+      margin-bottom: 35px;
+    }
+
+    .about {
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+      font-size: 17px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .card {
+      background: white;
+      padding: 30px 20px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0,0,0,.08);
+      transition: .3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card .icon {
+      font-size: 45px;
+      margin-bottom: 12px;
+    }
+
+    .card h3 {
+      color: #14532d;
+      margin-bottom: 10px;
+    }
+
+    .stats {
+      background: #14532d;
+      color: white;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      text-align: center;
+      gap: 20px;
+    }
+
+    .stat h2 {
+      font-size: 35px;
+    }
+
+    .contact {
+      background: white;
+      text-align: center;
+    }
+
+    .contact-box {
+      max-width: 700px;
+      margin: auto;
+      padding: 30px;
+      background: #f0fdf4;
+      border-radius: 12px;
+    }
+
+    .contact-box p {
+      margin: 12px 0;
+      font-size: 17px;
+    }
+
+    footer {
+      background: #0f3d22;
+      color: white;
+      text-align: center;
+      padding: 25px 15px;
+    }
+
+    .floating-whatsapp {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      width: 58px;
+      height: 58px;
+      background: #25D366;
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      font-size: 29px;
+      box-shadow: 0 4px 15px rgba(0,0,0,.25);
+      z-index: 999;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      nav a {
+        margin: 0 7px;
+        font-size: 13px;
+      }
+
+      .hero h1 {
+        font-size: 34px;
+      }
+
+      .hero p {
+        font-size: 17px;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .stats {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 50px 5%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo">Aamir Hussain Agro & Livestock</div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+
+      <h1>Aamir Hussain Agro & Livestock Farm</h1>
+
+      <p>
+        Agriculture & Livestock Farming in Sindh, Pakistan
+      </p>
+
+      <a
+        class="btn whatsapp"
+        href="https://wa.me/923048470097"
+        target="_blank">
+        💬 WhatsApp Us
+      </a>
+
+      <a
+        class="btn call"
+        href="tel:+923048470097">
+        📞 Call Us
+      </a>
+
+    </div>
+  </section>
+
+
+  <!-- ABOUT -->
+  <section id="about">
+
+    <h2 class="section-title">About Our Farm</h2>
+
+    <div class="about">
+
+      <p>
+        <strong>Aamir Hussain Agro & Livestock Farm</strong>
+        is an agriculture and livestock farming business based in Sindh,
+        Pakistan.
+      </p>
+
+      <br>
+
+      <p>
+        Our activities include livestock rearing, cattle farming,
+        goats and sheep farming, agricultural production,
+        animal feed and other farming-related activities.
+      </p>
+
+      <br>
+
+      <p>
+        Our goal is to develop a modern and sustainable farming business
+        using better livestock management and modern agricultural practices.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- SERVICES -->
+  <section id="services">
+
+    <h2 class="section-title">Our Services</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <div class="icon">🐄</div>
+        <h3>Cattle Farming</h3>
+        <p>
+          Cattle rearing, care, feeding and livestock management.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🐐</div>
+        <h3>Goat Farming</h3>
+        <p>
+          Goat farming, breeding, rearing and livestock management.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🐑</div>
+        <h3>Sheep Farming</h3>
+        <p>
+          Sheep rearing and healthy livestock management.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🌾</div>
+        <h3>Agriculture</h3>
+        <p>
+          Crop production and agricultural farming activities.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🌱</div>
+        <h3>Animal Feed</h3>
+        <p>
+          Farm-grown fodder and livestock feeding management.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🚜</div>
+        <h3>Farm Development</h3>
+        <p>
+          Modern farming practices and sustainable farm development.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- STATS -->
+  <section class="stats">
+
+    <div class="stat">
+      <h2>🌾</h2>
+      <p>Agriculture</p>
+    </div>
+
+    <div class="stat">
+      <h2>🐄</h2>
+      <p>Livestock</p>
+    </div>
+
+    <div class="stat">
+      <h2>🇵🇰</h2>
+      <p>Sindh, Pakistan</p>
+    </div>
+
+  </section>
+
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+
+    <h2 class="section-title">Contact Us</h2>
+
+    <div class="contact-box">
+
+      <p>📱 <strong>Phone:</strong>
+        <a href="tel:+923048470097">
+          +92 304 8470097
+        </a>
+      </p>
+
+      <p>💬 <strong>WhatsApp:</strong>
+        <a
+          href="https://wa.me/923048470097"
+          target="_blank">
+          Chat on WhatsApp
+        </a>
+      </p>
+
+      <p>📍 <strong>Location:</strong> Sindh, Pakistan</p>
+
+      <br>
+
+      <a
+        class="btn whatsapp"
+        href="https://wa.me/923048470097"
+        target="_blank">
+        Contact Us on WhatsApp
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <p>
+      © 2026 Aamir Hussain Agro & Livestock Farm
+    </p>
+
+    <p>
+      Agriculture • Livestock • Farming
+    </p>
+
+  </footer>
+
+
+  <!-- FLOATING WHATSAPP -->
+  <a
+    class="floating-whatsapp"
+    href="https://wa.me/923048470097"
+    target="_blank"
+    aria-label="WhatsApp">
+    💬
+  </a>
+
+</body>
+</html>
