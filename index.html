@@ -5,76 +5,479 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Aamir Hussain Agro & Livestock Farm - Agriculture and livestock farming in Sindh, Pakistan.">
 <title>Aamir Hussain Agro & Livestock Farm</title>
+
 <style>
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,sans-serif;color:#26352b;background:#f7faf7;line-height:1.6}
-nav{position:sticky;top:0;z-index:10;background:#fff;border-bottom:1px solid #ddd}
-.nav{max-width:1100px;margin:auto;padding:14px 20px;display:flex;justify-content:space-between;align-items:center}
-.logo{font-weight:800;color:#176337;font-size:18px}.nav a{margin-left:18px;color:#26352b;text-decoration:none;font-weight:600}
-.hero{padding:90px 20px;text-align:center;color:white;background:linear-gradient(135deg,#155d32,#4b9b58)}
-.hero h1{font-size:clamp(34px,7vw,60px);line-height:1.1;margin:0 0 18px}.hero p{max-width:760px;margin:0 auto 28px;font-size:18px}
-.btn{display:inline-block;padding:13px 22px;border-radius:9px;text-decoration:none;font-weight:700;margin:5px}.primary{background:white;color:#176337}.outline{border:2px solid white;color:white}
-section{max-width:1100px;margin:auto;padding:65px 20px}.heading{text-align:center;margin-bottom:35px}.heading h2{color:#176337;font-size:32px;margin:0 0 8px}.heading p{color:#68736b}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{background:white;padding:28px;border-radius:15px;border:1px solid #e0e7e1;box-shadow:0 5px 18px #0000000b}.icon{font-size:38px}.card h3{color:#176337}
-.about{background:#edf6ee}.about-inner{max-width:1100px;margin:auto;padding:65px 20px;display:grid;grid-template-columns:1fr 1fr;gap:30px}.box{background:white;padding:28px;border-radius:15px}.box li{margin:9px 0}
-.contact{background:white}.contact-box{max-width:800px;margin:auto;text-align:center;background:#edf6ee;padding:32px;border-radius:15px}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}.info{background:white;padding:18px;border-radius:10px}
-footer{background:#123d25;color:#dfeee3;text-align:center;padding:28px}
-@media(max-width:700px){.nav a{display:none}.grid,.about-inner,.contact-grid{grid-template-columns:1fr}.hero{padding:65px 18px}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+margin:0;
+font-family:Arial,sans-serif;
+color:#26352b;
+background:#f7faf7;
+line-height:1.6
+}
+nav{
+position:sticky;
+top:0;
+z-index:10;
+background:#fff;
+border-bottom:1px solid #ddd
+}
+.nav{
+max-width:1100px;
+margin:auto;
+padding:14px 20px;
+display:flex;
+justify-content:space-between;
+align-items:center
+}
+.logo{
+font-weight:800;
+color:#176337;
+font-size:18px
+}
+.nav a{
+margin-left:18px;
+color:#26352b;
+text-decoration:none;
+font-weight:600
+}
+.hero{
+padding:90px 20px;
+text-align:center;
+color:white;
+background:linear-gradient(135deg,#155d32,#4b9b58)
+}
+.hero h1{
+font-size:clamp(34px,7vw,60px);
+line-height:1.1;
+margin:0 0 18px
+}
+.hero p{
+max-width:760px;
+margin:0 auto 28px;
+font-size:18px
+}
+.btn{
+display:inline-block;
+padding:13px 22px;
+border-radius:9px;
+text-decoration:none;
+font-weight:700;
+margin:5px
+}
+.primary{
+background:white;
+color:#176337
+}
+.outline{
+border:2px solid white;
+color:white
+}
+section{
+max-width:1100px;
+margin:auto;
+padding:65px 20px
+}
+.heading{
+text-align:center;
+margin-bottom:35px
+}
+.heading h2{
+color:#176337;
+font-size:32px;
+margin:0 0 8px
+}
+.heading p{
+color:#68736b
+}
+.grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px
+}
+.card{
+background:white;
+padding:28px;
+border-radius:15px;
+border:1px solid #e0e7e1;
+box-shadow:0 5px 18px #0000000b
+}
+.icon{
+font-size:38px
+}
+.card h3{
+color:#176337
+}
+.about{
+background:#edf6ee
+}
+.about-inner{
+max-width:1100px;
+margin:auto;
+padding:65px 20px;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:30px
+}
+.box{
+background:white;
+padding:28px;
+border-radius:15px
+}
+.box li{
+margin:9px 0
+}
+.contact{
+background:white
+}
+.contact-box{
+max-width:800px;
+margin:auto;
+text-align:center;
+background:#edf6ee;
+padding:32px;
+border-radius:15px
+}
+.contact-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:15px
+}
+.info{
+background:white;
+padding:18px;
+border-radius:10px
+}
+.info a{
+color:#176337;
+font-weight:700
+}
+footer{
+background:#123d25;
+color:#dfeee3;
+text-align:center;
+padding:28px
+}
+@media(max-width:700px){
+.nav a{display:none}
+.grid,.about-inner,.contact-grid{
+grid-template-columns:1fr
+}
+.hero{
+padding:65px 18px
+}
+}
 </style>
 </head>
+
 <body>
 
 <nav>
 <div class="nav">
 <div class="logo">Aamir Hussain Agro & Livestock Farm</div>
-<div><a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#contact">Contact</a></div>
+
+<div>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#contact">Contact</a>
+</div>
+
 </div>
 </nav>
 
+
 <header class="hero" id="home">
+
 <h1>Aamir Hussain Agro & Livestock Farm</h1>
-<p>Modern agriculture and livestock farming with a focus on quality, sustainable growth and practical rural development.</p>
-<a class="btn primary" href="#services">Explore Our Farm</a>
-<a class="btn outline" href="#contact">Contact Us</a>
+
+<p>
+Modern agriculture and livestock farming with a focus on quality,
+sustainable growth and practical rural development.
+</p>
+
+<a class="btn primary" href="#services">
+Explore Our Farm
+</a>
+
+<a class="btn outline" href="#contact">
+Contact Us
+</a>
+
 </header>
 
+
 <section id="about">
-<div class="heading"><h2>About Our Farm</h2><p>Growing agriculture. Building livestock. Creating opportunities.</p></div>
-<div class="card">
-<p>Aamir Hussain Agro & Livestock Farm is focused on agriculture, livestock farming and modern farm development. Our aim is to build a reliable and sustainable farming business while maintaining quality and responsible farm management.</p>
+
+<div class="heading">
+
+<h2>About Our Farm</h2>
+
+<p>
+Growing agriculture. Building livestock. Creating opportunities.
+</p>
+
 </div>
+
+<div class="card">
+
+<p>
+Aamir Hussain Agro & Livestock Farm is focused on agriculture,
+livestock farming and modern farm development. Our aim is to build
+a reliable and sustainable farming business while maintaining
+quality and responsible farm management.
+</p>
+
+</div>
+
 </section>
+
 
 <div class="about">
+
 <div class="about-inner">
-<div><h2 style="color:#176337">Our Vision</h2><p>To develop a professional farm combining modern agriculture, livestock management, efficient irrigation and sustainable use of resources.</p></div>
-<div class="box"><h3 style="color:#176337">Our Focus</h3><ul><li>Agriculture and crop production</li><li>Livestock farming and animal care</li><li>Efficient irrigation solutions</li><li>Solar-powered farm development</li><li>Long-term sustainable growth</li></ul></div>
+
+<div>
+
+<h2 style="color:#176337">
+Our Vision
+</h2>
+
+<p>
+To develop a professional farm combining modern agriculture,
+livestock management, efficient irrigation and sustainable use
+of resources.
+</p>
+
 </div>
+
+
+<div class="box">
+
+<h3 style="color:#176337">
+Our Focus
+</h3>
+
+<ul>
+
+<li>Agriculture and crop production</li>
+
+<li>Livestock farming and animal care</li>
+
+<li>Efficient irrigation solutions</li>
+
+<li>Solar-powered farm development</li>
+
+<li>Long-term sustainable growth</li>
+
+</ul>
+
 </div>
+
+</div>
+
+</div>
+
 
 <section id="services">
-<div class="heading"><h2>Our Services</h2><p>Our main farming activities</p></div>
-<div class="grid">
-<div class="card"><div class="icon">🌾</div><h3>Agriculture</h3><p>Crop cultivation and farm management with attention to soil, water and seasonal requirements.</p></div>
-<div class="card"><div class="icon">🐄</div><h3>Livestock</h3><p>Livestock farming with focus on feeding, animal care, healthy growth and responsible management.</p></div>
-<div class="card"><div class="icon">☀️</div><h3>Solar & Irrigation</h3><p>Efficient solar-powered irrigation solutions for reliable agricultural water supply.</p></div>
+
+<div class="heading">
+
+<h2>
+Our Services
+</h2>
+
+<p>
+Our main farming activities
+</p>
+
 </div>
+
+
+<div class="grid">
+
+
+<div class="card">
+
+<div class="icon">🌾</div>
+
+<h3>
+Agriculture
+</h3>
+
+<p>
+Crop cultivation and farm management with attention to soil,
+water and seasonal requirements.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🐄</div>
+
+<h3>
+Livestock
+</h3>
+
+<p>
+Livestock farming with focus on feeding, animal care,
+healthy growth and responsible management.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">☀️</div>
+
+<h3>
+Solar & Irrigation
+</h3>
+
+<p>
+Efficient solar-powered irrigation solutions for reliable
+agricultural water supply.
+</p>
+
+</div>
+
+
+</div>
+
 </section>
+
 
 <section id="contact" class="contact">
-<div class="heading"><h2>Contact Us</h2><p>For farm information and business enquiries</p></div>
+
+<div class="heading">
+
+<h2>
+Contact Us
+</h2>
+
+<p>
+For farm information and business enquiries
+</p>
+
+</div>
+
+
 <div class="contact-box">
+
+
 <div class="contact-grid">
-<div class="info"><strong>📱 WhatsApp</strong><br>YOUR WHATSAPP NUMBER</div>
-<div class="info"><strong>📞 Phone</strong><br>YOUR PHONE NUMBER</div>
-<div class="info"><strong>📍 Location</strong><br>Sindh, Pakistan</div>
-<div class="info"><strong>🌐 Website</strong><br>aamirhussainfarm.github.io</div>
+
+
+<div class="info">
+
+<strong>📱 WhatsApp</strong>
+
+<br>
+
+<a href="https://wa.me/923048470097" target="_blank">
+
+0304 8470097
+
+</a>
+
 </div>
-<p style="margin-top:25px">Replace the phone placeholders with your business contact number.</p>
+
+
+<div class="info">
+
+<strong>📞 Phone</strong>
+
+<br>
+
+<a href="tel:+923048470097">
+
+0304 8470097
+
+</a>
+
 </div>
+
+
+<div class="info">
+
+<strong>📍 Location</strong>
+
+<br>
+
+<a href="https://www.google.com/maps/search/?api=1&query=Aamir+Hussain+Agro+%26+Livestock+Farm%2C+Tando+Allahyar%2C+Sindh%2C+Pakistan" target="_blank">
+
+Tando Allahyar, Sindh
+
+</a>
+
+</div>
+
+
+<div class="info">
+
+<strong>🌐 Website</strong>
+
+<br>
+
+aamirhussainfarm.github.io
+
+</div>
+
+
+</div>
+
+
+<div style="margin-top:25px">
+
+
+<a class="btn"
+style="background:#176337;color:#fff"
+href="https://wa.me/923048470097"
+target="_blank">
+
+💬 WhatsApp Now
+
+</a>
+
+
+<a class="btn"
+style="background:#26352b;color:#fff"
+href="tel:+923048470097">
+
+📞 Call Now
+
+</a>
+
+
+<a class="btn"
+style="background:#fff;color:#176337;border:1px solid #176337"
+href="https://www.google.com/maps/search/?api=1&query=Aamir+Hussain+Agro+%26+Livestock+Farm%2C+Tando+Allahyar%2C+Sindh%2C+Pakistan"
+target="_blank">
+
+📍 Open Google Maps
+
+</a>
+
+
+</div>
+
+</div>
+
 </section>
 
+
 <footer>
-© 2026 <strong>Aamir Hussain Agro & Livestock Farm</strong>. All rights reserved.
+
+© 2026 <strong>
+Aamir Hussain Agro & Livestock Farm
+</strong>.
+All rights reserved.
+
 </footer>
+
 </body>
 </html>
